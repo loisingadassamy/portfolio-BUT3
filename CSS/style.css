@@ -310,88 +310,99 @@ div.texte .container {
 }
 
 /* ===== FOOTER ===== */
+
 .footer {
-  background: #ffffff;
-  border-top: 1px solid #ffa0a0;
-  padding: 2.5rem 2rem 1.5rem;
+  padding: 3rem 2rem 2rem;
+  border-top: 0.5px solid var(--color-border);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
 }
-
-/* Brand */
-.footer-brand h2 {
- font-family: "Copperplate", Fantasy;
-     font-size: 30px;
-    font-weight: lighter;
-    color: #ffa0a0;
-  margin-bottom: 6px;
+.footer-name {
+  font-family: "Copperplate", Fantasy;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: lighter;
+  font-size: 40px;
+  color: var(--color-nom);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 4px;
 }
-
-.footer-brand p {
+.footer-role {
   font-size: 13px;
-  color: #6b6b67;
+  color: var(--color-text);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
 }
-
-.footer-copy {
-  font-size: 13px;
-  color: #9a9a96;
-}
-
-/* Social buttons */
-.social-links {
+.footer-socials {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
-
 .social-btn {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   padding: 7px 14px;
-  border-radius: 8px;
-  border: 1px solid #ffa0a0;
-  background: #ffffff;
-  text-decoration: none;
-  color: #ffa0a0;
+  border: 0.5px solid var(--color-border);
+  border-radius: 5vw;
   font-size: 13px;
   font-weight: 500;
+  color: var(--color-text-btn);
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
   cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
 }
-
 .social-btn:hover {
-  background: #ffa0a0;
-  color: #ffffff;
+  background: var(--color-background-hover);
+  color: var(--color-text-hover);
+  border-color: var(--color-border);
+}
+.social-btn i { font-size: 16px; }
+.footer-col-title {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-titre-col);
+  margin: 0 0 1rem;
+}
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-links a {
+  font-size: 14px;
+  color: var(--color-links);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer-links a:hover { color: var(--color-links-hover); }
+.footer-bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--color-border);
+  font-size: 12px;
+  color: var(--color-text-bottom);
+}
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-name { font-size: 1.75rem; }
 }
 
-.social-btn svg {
-  flex-shrink: 0;
-  width: 16px;
-  height: 16px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
-  .footer-top {
-    flex-direction: column;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-nav {
-    gap: 1.5rem;
-  }
-}
 
 /* ===== DARK MODE ===== */
 @media (prefers-color-scheme: dark) {
@@ -736,4 +747,35 @@ body {
   .modal-info { padding: 1.5rem 1rem; }
 }
 
+
+
+/* ===== Variables couleurs ===== */
+
+:root {
+  --color-border: #000000;
+  --color-nom: #ef389d;
+  --color-text: #000000;
+  --color-text-btn: #000000;
+  --color-background-hover: #ffef96;
+  --color-text-hover: #000000;
+  --color-titre-col: #ef389d;
+  --color-links: #000000;
+  --color-links-hover: #ef389d;
+  --color-text-bottom: #000000;
+  /* … toutes tes autres variables … */
+}
+
+[data-theme="dark"] {
+  --color-border: #6d8dec;
+  --color-nom: #ff75c1;
+  --color-text: #6d8dec;
+  --color-text-btn: #ffffff;
+  --color-background-hover: linear-gradient(to bottom right, #000000, #1d5ac2);
+  --color-text-hover: #ffffff;
+  --color-titre-col: #6d8dec;
+  --color-links: #ffffff;
+  --color-links-hover: #6d8dec;
+  --color-text-bottom: #a4f7ff;
+  /* … */
+}
 
