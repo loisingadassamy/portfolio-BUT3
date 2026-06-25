@@ -231,11 +231,11 @@ div.texte .container {
   background: #1d59c27a;
 }
 
-.filter-btn.active-graphisme         { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
-.filter-btn.active-audiovisuel       { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
-.filter-btn.active-marketing         { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
-.filter-btn.active-entrepreneuriat   { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
-.filter-btn.active-gestion           { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
+.filter-btn.active-comprendre        { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
+.filter-btn.active-concevoir         { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
+.filter-btn.active-exprimer          { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
+.filter-btn.active-entreprendre      { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
+.filter-btn.active-developper        { background:linear-gradient(to bottom right, #000000, #1d5ac2); border-color: #6d8dec; color: #fff; }
 
 /* ── Grille de cartes ── */
 .gallery-grid {
