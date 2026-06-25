@@ -1,171 +1,156 @@
-/* ============================================================
-   gallery.js  –  Galerie avec images, PDF et vidéos
-   Modale : contenu à gauche · description à droite
-   ============================================================ */
-
 const categories = [
   {
     id: "comprendre",
     label: "Comprendre",
     items: [
       {
-        type: "image",
-        url: "images/Black-pink.jpg",
-        full: "images/Black-pink.jpg",
+        type: "pdf",
+        url: "Projets/Lyannaj.png",
+        full: "Projets/Lyannaj.pdf",
         name: "Business Model Canva",
-        description: "Dans le cadre d'un projet de groupe, notre équipe a réalisé le Business Model Canvas de Guadeloupe Recyclerie Solidaire (GRS), une association locale engagée dans la lutte contre le gaspillage textile et la précarité en Guadeloupe.
-
-À travers les 9 blocs du BMC, nous avons modélisé l'ensemble du modèle économique de l'association. Le document intègre également une analyse RSE détaillant les impacts environnemental, social et économique de GRS, ainsi qu'une identification des points de vigilance stratégiques.",
-        tags: ["Comprendre", "Concevoir", "Entreprendre"],
+        description: "Réalisation du business model canva d'un projet fictif innovant.",
+        tags: ["comprendre", "concevoir", "entreprendre"],
+        year: "2025",
+      },
+      {
+        type: "image",
+        url: "Projets/Carré tropical logo.jpg",
+        full: "Projets/Stats.png",
+        name: "Gestion du compte Instagram de Carré Tropical",
+        description: "Animation du compte Instagram de Carré Tropical. Analyse des statistiques et des performances.",
+        tags: ["comprendre", "concevoir", "entreprendre"],
+        year: "2024",
+      },
+      {
+        type: "pdf",
+        url: "Projets/Newsletter.png",
+        full: "Projets/Newsletter.pdf",
+        name: "Newsletter",
+        description: "Newsletter visant à promouvoir les activités de Carré Tropical",
+        tags: ["Concevoir", "Exprimer", "Comprendre"],
         year: "2026",
-      },
-      {
-        type: "image",
-        url: "images/Logo Wild Mind.png",
-        full: "images/Logo Wild Mind.png",
-        name: "Identité Visuelle",
-        description: "Conception d'un logo et d'une charte graphique complète pour la marque Wild Mind. Travail sur la symbolique, les couleurs et la typographie.",
-        tags: ["Adobe Illustrator"],
-        year: "2024",
-      },
-      {
-        type: "image",
-        url: "images/Femmes fond vert.png",
-        full: "images/Femmes fond vert.png",
-        name: "Illustration",
-        description: "Illustration numérique réalisée dans le cadre d'un projet créatif personnel. Travail sur la composition et le contraste colorimétrique.",
-        tags: ["Ibis Paint X", "Photoshop"],
-        year: "2023",
-      },
-      {
-        type: "image",
-        url: "images/Take a photo.png",
-        full: "images/Take a photo.png",
-        name: "Affiche",
-        description: "Design d'affiche événementielle. Composition centrée sur la mise en valeur du message avec un traitement typographique fort.",
-        tags: ["Canva", "Illustrator"],
-        year: "2024",
       },
     ],
   },
   {
-    id: "audiovisuel",
-    label: "Audiovisuel",
+    id: "concevoir",
+    label: "Concevoir",
     items: [
       {
-        type: "image",
-        url: "images/Miniature blo'k.png",
-        full: "images/Miniature blo'k.png",
-        name: "Carrousel Instagram",
-        description: "Création d'un carrousel Instagram pour la marque Blo'k. Mise en cohérence visuelle des slides avec la charte graphique existante.",
-        tags: ["Canva", "Photoshop"],
+        type: "pdf",
+        url: "Projets/Lyannaj.png",
+        full: "Projets/Lyannaj.pdf",
+        name: "Business Model Canva",
+        description: "Réalisation du business model canva d'un projet fictif innovant.",
+        tags: ["comprendre", "concevoir", "entreprendre"],
         year: "2025",
+      },
+      {
+        type: "image",
+        url: "Projets/Carré tropical logo.jpg",
+        full: "Projets/Stats.png",
+        name: "Gestion du compte Instagram de Carré Tropical",
+        description: "Animation du compte Instagram de Carré Tropical. Analyse des statistiques et des performances.",
+        tags: ["comprendre", "concevoir", "entreprendre"],
+        year: "2024",
       },
       {
         type: "video",
         url: "videos/Pourquoi choisir carré tropical.mp4",
-        thumbnail: "images/Miniature carré tropical.png",
+        thumbnail: "Projets/Miniature carré tropical.png",
         name: "Vidéo Carré Tropical",
-        description: "Vidéo de présentation réalisée pour Carré Tropical, agence événementielle. Montage, habillage graphique et sous-titrage inclus.",
-        tags: ["DaVinci Resolve", "CapCut"],
-        year: "2025",
+        description: "Vidéo de présentation réalisée pour promouvoir les services de Carré Tropical, une agence événementielle. Montage et habillage graphique.",
+        tags: ["Exprimer", "Concevoir"],
+        year: "2026",
       },
       {
-        type: "image",
-        url: "images/Miniature documentaire.png",
-        full: "images/Miniature documentaire.png",
-        name: "Documentaire",
-        description: "Réalisation d'un court-métrage documentaire dans le cadre du BUT MMI. Tournage, montage et étalonnage couleur.",
-        tags: ["DaVinci Resolve"],
-        year: "2024",
+        type: "pdf",
+        url: "Projets/Newsletter.png",
+        full: "Projets/Newsletter.pdf",
+        name: "Newsletter",
+        description: "Newsletter visant à promouvoir les activités de Carré Tropical",
+        tags: ["Concevoir", "Exprimer", "Comprendre"],
+        year: "2026",
       },
     ],
   },
   {
-    id: "marketing",
-    label: "Marketing Digital",
+    id: "exprimer",
+    label: "Exprimer",
     items: [
       {
-        type: "image",
-        url: "images/Jeu Concours.png",
-        full: "images/Jeu Concours.png",
-        name: "Jeu concours Instagram",
-        description: "Conception et mise en œuvre d'un jeu concours Instagram. Visuel accrocheur, rédaction du post et suivi des statistiques d'engagement.",
-        tags: ["Meta Business Suite", "Canva"],
-        year: "2025",
-      },
-      {
-        type: "image",
-        url: "images/miniature newsletter.png",
-        full: "images/miniature newsletter.png",
-        name: "Newsletter",
-        description: "Design et rédaction d'une newsletter mensuelle. Structuration du contenu éditorial et optimisation pour mobile.",
-        tags: ["Canva"],
-        year: "2025",
-      },
-      {
         type: "video",
-        url: "",
-        thumbnail: "",
-        name: "Vidéo Promotion soirée jeux",
-        description: "Vidéo promotionnelle pour une soirée jeux organisée dans le cadre de l'alternance. Réalisation, montage et diffusion sur les réseaux.",
-        tags: ["CapCut"],
-        year: "2025",
+        url: "videos/Pourquoi choisir carré tropical.mp4",
+        thumbnail: "Projets/Miniature carré tropical.png",
+        name: "Vidéo Carré Tropical",
+        description: "Vidéo de présentation réalisée pour promouvoir les services de Carré Tropical, une agence événementielle. Montage et habillage graphique.",
+        tags: ["Exprimer", "Concevoir"],
+        year: "2026",
+      },
+      {
+        type: "image",
+        url: "Projets/Post.png",
+        full: "Projets/Post.png",
+        name: "Post Instagram",
+        description: "Conception d'un post instagram pour l'annonce d'un jeu concours. Visuel accrocheur.",
+        tags: ["Exprimer"],
+        year: "2026",
+      },
+      {
+        type: "pdf",
+        url: "Projets/Newsletter.png",
+        full: "Projets/Newsletter.pdf",
+        name: "Newsletter",
+        description: "Newsletter visant à promouvoir les activités de Carré Tropical",
+        tags: ["Concevoir", "Exprimer", "Comprendre"],
+        year: "2026",
       },
     ],
   },
   {
-    id: "entrepreneuriat",
-    label: "Entrepreneuriat",
+    id: "entreprendre",
+    label: "Entreprendre",
     items: [
       {
         type: "pdf",
-        url: "images/Miniature DOSSIER PPP.png",       // vignette affichée dans la grille
-        full: "documents/Dossier PPP.pdf",             // ← remplace par ton vrai chemin PDF
+        url: "Projets/Lyannaj.png",
+        full: "Projets/Lyannaj.pdf",
+        name: "Business Model Canva",
+        description: "Réalisation du business model canva d'un projet fictif innovant.",
+        tags: ["comprendre", "concevoir", "entreprendre"],
+        year: "2025",
+      },
+      {
+        type: "pdf",
+        url: "Projets/PPP.png",       // vignette affichée dans la grille
+        full: "Projets/Dossier PPP.pdf",             // ← remplace par ton vrai chemin PDF
         name: "Projet Personnel et Professionnel",
         description: "Dossier de Projet Personnel et Professionnel réalisé en 2ème année de BUT MMI. Réflexion sur mon orientation, mes compétences et mes ambitions professionnelles.",
-        tags: ["Word", "Canva"],
-        year: "2024",
+        tags: ["Entreprendre"],
+        year: "2025",
       },
       {
         type: "image",
-        url: "",
-        full: "",
-        name: "Atelier FabLab",
-        description: "Participation à un atelier FabLab dans le cadre du module Entrepreneuriat. Prototypage et réflexion autour de l'innovation.",
-        tags: ["FabLab"],
+        url: "Projets/Carré tropical logo.jpg",
+        full: "Projets/Stats.png",
+        name: "Gestion du compte Instagram de Carré Tropical",
+        description: "Animation du compte Instagram de Carré Tropical. Analyse des statistiques et des performances.",
+        tags: ["comprendre", "concevoir", "entreprendre"],
         year: "2024",
-      },
-      {
-        type: "image",
-        url: "",
-        full: "",
-        name: "Présentation Recyclerie solidaire",
-        description: "Présentation d'un projet de recyclerie solidaire élaboré en équipe. Étude de marché, modèle économique et pitch.",
-        tags: ["PowerPoint", "Canva"],
-        year: "2023",
       },
     ],
   },
   {
-    id: "gestion",
-    label: "Gestion de Projet",
+    id: "Developper",
+    label: "Développer",
     items: [
-      {
-        type: "image",
-        url: "",
-        full: "",
-        name: "À venir",
-        description: "Ce projet sera bientôt ajouté.",
-        tags: [],
-        year: "",
-      },
+
     ],
   },
 ];
 
 /* ── État actif ── */
-let activeId = "graphisme";
+let activeId = "comprendre";
 
 /* ── Référence vers la carte qui a ouvert la modale (pour y remettre le focus) ── */
 let lastFocusedCard = null;
@@ -409,3 +394,5 @@ document.addEventListener("keydown", (e) => {
 
 /* ── Lancement ── */
 render();
+
+ 
