@@ -5,17 +5,17 @@
 
 const categories = [
   {
-    id: "graphisme",
-    label: "Graphisme",
+    id: "comprendre",
+    label: "Comprendre",
     items: [
       {
         type: "image",
         url: "images/Black-pink.jpg",
         full: "images/Black-pink.jpg",
-        name: "Post Instagram",
+        name: "Business Model Canva",
         description: "Création d'un post Instagram pour une marque de mode. Mise en page graphique avec typographie et palette de couleurs personnalisée.",
-        tags: ["Adobe Illustrator", "Photoshop"],
-        year: "2024",
+        tags: ["Comprendre", "Concevoir", "Entreprendre"],
+        year: "2026",
       },
       {
         type: "image",
