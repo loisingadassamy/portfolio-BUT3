@@ -13,7 +13,9 @@ const categories = [
         url: "images/Black-pink.jpg",
         full: "images/Black-pink.jpg",
         name: "Business Model Canva",
-        description: "Création d'un post Instagram pour une marque de mode. Mise en page graphique avec typographie et palette de couleurs personnalisée.",
+        description: "Dans le cadre d'un projet de groupe, notre équipe a réalisé le Business Model Canvas de Guadeloupe Recyclerie Solidaire (GRS), une association locale engagée dans la lutte contre le gaspillage textile et la précarité en Guadeloupe.
+
+À travers les 9 blocs du BMC, nous avons modélisé l'ensemble du modèle économique de l'association. Le document intègre également une analyse RSE détaillant les impacts environnemental, social et économique de GRS, ainsi qu'une identification des points de vigilance stratégiques.",
         tags: ["Comprendre", "Concevoir", "Entreprendre"],
         year: "2026",
       },
