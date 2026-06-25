@@ -1,0 +1,147 @@
+    .ml-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10rem 2rem 4rem;
+      text-align: center;
+    }
+
+    .ml-hero h1 {
+      font-family: "Copperplate", Fantasy;
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: lighter;
+      color: var(--h1);
+      margin: 0 0 1rem;
+      letter-spacing: -1px;
+    }
+
+    .ml-hero p {
+      font-size: 1rem;
+      color: var(--container);
+      max-width: 520px;
+      line-height: 1.7;
+      opacity: 0.8;
+    }
+
+    /* Séparateur décoratif */
+    .ml-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--h3);
+      border: none;
+      border-radius: 2px;
+      margin: 1.5rem auto 0;
+    }
+
+    /* Contenu principal */
+    .ml-content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2rem 2rem 6rem;
+    }
+
+    /* Carte de section */
+    .ml-section {
+      background: var(--texte-bgd);
+      border: 1.5px solid var(--texte-border);
+      border-radius: 20px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .ml-section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(109, 141, 236, 0.12);
+    }
+
+    /* Numéro + titre de section */
+    .ml-section-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .ml-num {
+      font-family: "Copperplate", Fantasy;
+      font-size: 1.6rem;
+      font-weight: lighter;
+      color: var(--h3);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .ml-section h2 {
+      font-family: "Copperplate", Fantasy;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--h2);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0;
+      text-align: left;
+    }
+
+    /* Texte courant */
+    .ml-section p,
+    .ml-section li {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--container);
+    }
+
+    .ml-section ul {
+      margin: 0.8rem 0 0 1.2rem;
+    }
+
+    .ml-section li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* Liens dans le texte */
+    .ml-section a {
+      color: var(--color-links-hover);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      transition: opacity 0.2s;
+    }
+
+    .ml-section a:hover {
+      opacity: 0.7;
+    }
+
+    /* Highlight (nom hébergeur, email…) */
+    .ml-highlight {
+      font-weight: 600;
+      color: var(--h3);
+    }
+
+    /* Bloc "mise à jour" en bas */
+    .ml-updated {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--container);
+      opacity: 0.55;
+      padding-bottom: 2rem;
+    }
+
+    /* Animation d'entrée */
+    .ml-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.2s ease;
+    }
+
+    .ml-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .ml-content { padding: 1.5rem 1rem 4rem; }
+      .ml-section  { padding: 1.5rem 1.2rem; }
+      .ml-section h2 { font-size: 0.95rem; }
+    }
