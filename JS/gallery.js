@@ -23,7 +23,7 @@ const categories = [
       },
       {
         type: "pdf",
-        url: "Projets/Newsletter.png",
+        url: "Projets/newsletter.png",
         full: "Projets/Newsletter.pdf",
         name: "Newsletter",
         description: "Newsletter visant à promouvoir les activités de Carré Tropical",
@@ -65,7 +65,7 @@ const categories = [
       },
       {
         type: "pdf",
-        url: "Projets/Newsletter.png",
+        url: "Projets/newsletter.png",
         full: "Projets/Newsletter.pdf",
         name: "Newsletter",
         description: "Newsletter visant à promouvoir les activités de Carré Tropical",
@@ -98,7 +98,7 @@ const categories = [
       },
       {
         type: "pdf",
-        url: "Projets/Newsletter.png",
+        url: "Projets/newsletter.png",
         full: "Projets/Newsletter.pdf",
         name: "Newsletter",
         description: "Newsletter visant à promouvoir les activités de Carré Tropical",
