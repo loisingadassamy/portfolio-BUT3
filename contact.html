@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loïs Ingadassamy</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="images/Logo_refont.png?v=2"
+    />
+    <link rel="stylesheet" href="CSS/ContactStyle.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="titre">Loïs Ingadassamy</div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+                        <button class="lang-toggle" aria-label="Switch to English" data-lang="en">EN</button>
+
+            <button id="theme-toggle" aria-label="Changer de thème">
+  <span class="icon-sun">🔆</span>
+  <span class="icon-moon">🌙</span>
+</button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#mon_parcours">Mon parcours</a></li>
+                <li><a href="Projets.html">Projets</a></li>
+                <li><a href="contact.html" class="btn-contact">Me contacter</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Contactez-moi</h1>
+            <p class="subtitle">Je suis à votre écoute et ravis d'échanger avec vous</p>
+        </header>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Mes coordonnées</h2>
+                
+               
+                <div class="info-item">
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+590690639071">+590 690 63 90 71</a></p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:loisingadassamy@gmail.com">loisingadassamy@gmail.com</a></p>
+                </div>
+
+               
+            </div>
+
+            <div class="contact-form">
+                <form  action="https://formspree.io/f/xvzqneyr"
+  method="POST"
+                >
+                  
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required placeholder="Nom et Prénom">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Votre adresse email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Objet de votre message">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Votre message ici..."></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ <footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <p class="footer-name">Loïs Ingadassamy</p>
+      <p class="footer-role">Graphic Designer</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <i class="ti ti-brand-instagram" aria-hidden="true"></i>
+          Instagram
+        </a>
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <i class="ti ti-brand-linkedin" aria-hidden="true"></i>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <p class="footer-col-title">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Projets.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="footer-col-title">Légal</p>
+      <ul class="footer-links">
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Loïs Ingadassamy — Tous droits réservés
+  </div>
+</footer>
+
+  <script src="JS/Script 1.js"></script>
+
+    <script>
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Gestion du formulaire
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Animation du bouton
+            const button = this.querySelector('button');
+            const originalText = button.textContent;
+            button.textContent = 'Envoi en cours...';
+            button.disabled = true;
+
+            // Simulation d'envoi
+            setTimeout(() => {
+                button.textContent = '✓ Message envoyé !';
+                button.style.background = '#28a745';
+                
+                setTimeout(() => {
+                    this.reset();
+                    button.textContent = originalText;
+                    button.style.background = '';
+                    button.disabled = false;
+                }, 2000);
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>
